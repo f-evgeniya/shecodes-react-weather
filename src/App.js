@@ -23,7 +23,11 @@ export default function App() {
           open-sourced on GitHub
         </a>{" "}
         and{" "}
-        <a href="https://nelify.com" target="_blank" rel="noopener noreferrer">
+        <a
+          href="https://app.nelify.com"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           hosted on Netlify
         </a>
       </p>
