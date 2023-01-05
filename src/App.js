@@ -24,7 +24,7 @@ export default function App() {
         </a>{" "}
         and{" "}
         <a
-          href="https://app.nelify.com"
+          href="https://app.netlify.com/sites/delightful-lebkuchen-7d8bbd/deploys"
           target="_blank"
           rel="noopener noreferrer"
         >
