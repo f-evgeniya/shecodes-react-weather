@@ -88,13 +88,11 @@
   margin: 5px 0 5px 20px;
   margin-bottom: 15px;
   position: relative;
-  top: 10px;
+  top: -25px;
 }
 .Weather .units {
   font-size: 22px;
   font-weight: normal;
-  position: relative;
-  top: 25px;
 }
 .Weather .wind,
 .humidity {
