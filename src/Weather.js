@@ -1,7 +1,17 @@
-import React from "react";
+import React, { useState } from "react";
+import axios from "axios";
 import "./weather.css";
 
 export default function Weather() {
+  const [temperature, setTemperature]=useState(null)
+  function handleResponse(response) {
+    console.log(response.data);
+  }
+  const apiKey = "5ba04o3cadf5t843538c5f40f329e3dc";
+
+  let city = "London";
+  let apiUrl = `https://api.shecodes.io/weather/v1/current?query=${city}&key=${apiKey}&units=metric`;
+  axios.get(apiUrl).then(handleResponse);
   let weatherData = {
     city: "Kyiv",
     date: "Thursday, Dec 15",
