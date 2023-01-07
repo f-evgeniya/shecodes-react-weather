@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import FormattedDate from "./FormattedDate";
 import axios from "axios";
 import "./weather.css";
 
@@ -9,7 +10,7 @@ export default function Weather(props) {
     setWeatherData({
       ready: true,
       city: response.data.city,
-      date: "Thursday, Dec 15",
+      date: new Date(response.data.time * 1000),
       description: response.data.condition.description,
       temperature: response.data.temperature.current,
       wind: response.data.wind.speed,
@@ -29,17 +30,18 @@ export default function Weather(props) {
         <form className="search-form">
           <input
             type="search"
-            value=""
             placeholder="Enter a city"
             className="search-input"
-            autocomplete="off"
+            autoComplete="off"
           />
           <button className="search-btn">Search</button>
         </form>
 
         <div className="weather-information">
           <div className="city-information">
-            <p className="date">{weatherData.date}</p>
+            <p className="date">
+              <FormattedDate date={weatherData.date} />
+            </p>
             <h1 className="city">{weatherData.city}</h1>
             <div className="img-temp-card">
               <img src={weatherData.imgUrl} alt={weatherData.description} />
