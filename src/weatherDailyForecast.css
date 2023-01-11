@@ -1,0 +1,37 @@
+.weather-forecast {
+  margin: 30px 24px 0 24px;
+  border-radius: 5px;
+  border: none;
+  background: linear-gradient(
+    109.6deg,
+    rgb(141, 198, 255) 1.2%,
+    rgb(241, 247, 250) 75.2%
+  );
+  padding: 20px 40px;
+  box-shadow: 5px 5px 5px rgb(156, 156, 156);
+  display: flex;
+  justify-content: space-between;
+}
+
+.forecast-first-day {
+  text-align: center;
+}
+
+.weather-forecast-date {
+  font-size: 18px;
+  margin-top: 0;
+  margin-bottom: 10px;
+  border-bottom: 1px solid #8096ac;
+  line-height: 3;
+  text-align: center;
+}
+.weather-forecast-temperature {
+  font-size: 16px;
+  margin-top: 6px;
+  margin-bottom: 14px;
+  text-align: center;
+}
+.weather-forecast-temperature-min {
+  opacity: 0.7;
+  margin-left: 8px;
+}
