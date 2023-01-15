@@ -1,5 +1,5 @@
 .weather-forecast {
-  margin: 30px 24px 0 24px;
+  margin: 30px 24px 30px 24px;
   border-radius: 5px;
   border: none;
   background: linear-gradient(
@@ -9,8 +9,7 @@
   );
   padding: 20px 40px;
   box-shadow: 5px 5px 5px rgb(156, 156, 156);
-  display: flex;
-  justify-content: space-between;
+  text-align: center;
 }
 
 .forecast-first-day {

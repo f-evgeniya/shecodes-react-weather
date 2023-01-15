@@ -7,7 +7,7 @@ export default function App() {
     <div className="App">
       <div className="container">
         <Weather defaultCity="Kyiv" />
-        <p>
+        <p className="created-by">
           Created by{" "}
           <a
             href="https://www.shecodes.io/graduates/54185-evgeniya-firsova"

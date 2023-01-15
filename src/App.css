@@ -21,12 +21,11 @@ body {
   background: #fff;
 }
 
-
 .created-by {
   font-size: 12px;
   margin-left: 30px;
   margin-top: 50px;
 }
-a {
+.created-by a {
   color: #22313f;
 }
